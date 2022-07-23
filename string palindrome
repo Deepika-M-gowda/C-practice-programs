@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+// Creating the function
+int isPalindrome(char *str){
+  int l,comp=0,n;
+n=strlen(str);  
+for(l=0;l<n/2;l++){
+     if(str[l]==str[n-l-1])
+     comp++;
+  } 
+  if(comp==l)
+        return 1;
+    else
+        return 0;
+
+ }
+int main(){    
+    char str[1000];
+    printf("Enter the string to check: ");
+    gets(str); 
+    if(isPalindrome(str))
+      printf("The entered string is a palindrome");
+    else
+        printf("The entered string is not a palindrome");        
+    return 0;
+}
