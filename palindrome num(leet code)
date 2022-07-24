@@ -1,6 +1,8 @@
 bool isPalindrome(int x){
+if(x<0)
+return 0;
   // declare variables
-  int temp, remainder, rev=0;
+  unsignedint temp, remainder, rev=0;
 
   // copy of original number
   temp = x;
