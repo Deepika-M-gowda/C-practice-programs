@@ -1,0 +1,29 @@
+bool isPalindrome(int x){
+  // declare variables
+  int temp, remainder, rev=0;
+
+  // copy of original number
+  temp = x;
+
+  // loop to repeat
+  while( x!=0 )
+  {
+     // find last digit
+     remainder = x % 10;
+
+     // calculate reverse
+     rev = rev*10 + remainder;
+
+     // remove last digit
+     x /= 10;
+  }
+
+  /* if reverse is equal to the
+   * original number then it is a 
+   * palindrome number else it is not.
+   */
+  if ( rev == temp )
+      return 1;
+  else
+      return 0;
+}
