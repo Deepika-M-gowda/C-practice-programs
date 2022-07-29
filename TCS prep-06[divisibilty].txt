@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+   long int A;
+    long int N;
+    scanf("%ld",&A);
+    for(long int i=0;i<A;i++)
+   {
+        scanf("%ld",&N);
+   }
+   if(N%10==0)
+        printf("Yes");
+   else 
+        printf("No");
+}
